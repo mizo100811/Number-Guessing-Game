@@ -12,3 +12,14 @@ def play_game():
         else:print(f"congratulations! you guessed the number in {attempts}attempts.")
         break
     
+def get_user_guess():
+    while True:
+        try:
+            guess = int(input("Enter your guess(1-100):"))
+            if 1 <= guess <= 100:
+                return guess
+            else:
+                print("pleaseenter a numberbetween1 and 100.")
+        except ValueError:
+            print("invalid input!Pleaseenter a number.")
+                
