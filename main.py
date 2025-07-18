@@ -24,6 +24,11 @@ def play_game():
             print("too low!Try again.")
         elif guess>random_number:
             print("too high try again.")
-        else:print(f"congratulations! you guessed the number in {attempts}attempts.")
-        break
+        else:
+            print(f"congratulations! you guessed the number in {attempts}attempts.")
+            break
+        
+play_game()
+    
+
                 
